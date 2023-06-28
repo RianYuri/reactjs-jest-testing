@@ -10,7 +10,10 @@ export default function Cabecalho() {
         <Logo />
         <div className={estilos.usuario}>
           <p>Rian Yuri Rodrigues</p>
-          <img src={avatarUsuario} alt="Ícone de um avatar de usuário" />
+          <img
+            src={avatarUsuario}
+            alt="Ícone de um avatar de usuário"
+          />
         </div>
       </div>
     </header>
