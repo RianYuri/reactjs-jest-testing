@@ -18,11 +18,6 @@ export default function App() {
     setTransacoes([...transacoes, valores]);
   }
 
-  const testeSeiLa = () => {
-
-
-  }
-
   return (
     <>
       <Cabecalho />
