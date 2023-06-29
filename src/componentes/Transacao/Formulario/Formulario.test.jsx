@@ -22,3 +22,16 @@ describe("Deve renderizar um campo de input",()=>{
       expect(inputText).toHaveValue(50);
     });
 })
+test('deve chamar um evento de on submit  ao clicar em reaizar a transação',()=>{
+  const realizarTransacao = jest.fn();
+  // o jest.fn esta simulando o comportamento de uma função
+
+  render(<Formulario realizarTransacao={realizarTransacao}/>)
+    const botao = screen.getByRole('button')
+
+    userEvent.click(botao)
+
+    expect(realizarTransacao).toHaveBeenCalledTimes(1)
+
+    // Essa função espera que o botao seja acionado pelo menos uma vez
+})
